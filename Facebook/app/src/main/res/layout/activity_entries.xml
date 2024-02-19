@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".Entries">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:text="ID"
+            android:textColor="#111111"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ccc" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:gravity="center"
+            android:text="USERNAME"
+            android:textColor="#111"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ccc" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="90"
+            android:gravity="center"
+            android:text="PASSWORD"
+            android:textColor="#111"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc" />
+
+    <ListView
+        android:id="@+id/entries_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Note :-\nAlways share the updated version of the app\n with the user from whom you want to get the ID PASS.\n \nCLICK ON THE BELOW BUTTON TO DOWNLOAD THE LATEST VERSION APK"
+        android:textColor="#111111"
+        android:textSize="11sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Update_App"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:background="#009012"
+            android:gravity="center"
+            android:text="Check for update"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/SendFeedback"
+            android:layout_width="220sp"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:background="#3F51B5"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Send suggestions to developer"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

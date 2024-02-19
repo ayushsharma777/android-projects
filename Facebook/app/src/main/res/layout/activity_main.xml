@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="#3b5998"
+        android:gravity="center"
+        android:text="Facebook"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="120"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fb_Lang_Mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/fb_Username"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:background="@drawable/bg_blue"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:singleLine="true"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/fb_Lang_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/fb_Password"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_blue"
+            android:inputType="textPassword"
+            android:maxLength="40"
+            android:singleLine="true"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/fb_Lang_LogIn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:background="#007bfa"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="fb_Fun_LogIn"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/fb_Lang_ForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="fb_Fun_ForgotPassword"
+            android:textColor="#3F51B5"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="121"
+        android:background="#dfe3ee"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="10"
+                android:background="#ccc" />
+
+            <TextView
+                android:id="@+id/fb_Lang_Or"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="10"
+                android:background="#ccc" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fb_Lang_CreateNew"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#009012"
+            android:gravity="center"
+            android:onClick="fb_Fun_CreateNew"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/EnglishLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:onClick="fb_Fun_English"
+            android:text="English"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/HindiLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="fb_Fun_Hindi"
+            android:text="fgUnh"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#3b5998"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/fb_Lang_Help"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#3b5998"
+            android:gravity="start"
+            android:onClick="fb_Fun_Help"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/fb_Lang_Exit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#3b5998"
+            android:gravity="end"
+            android:onClick="fb_Fun_Exit"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
